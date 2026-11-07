@@ -3,3 +3,8 @@
 //
 
 #include "hola.h"
+class Hola {
+public:
+    Hola();
+    ~Hola();
+};
