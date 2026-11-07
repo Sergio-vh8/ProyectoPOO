@@ -13,6 +13,7 @@ public:
     ~virtual Entidad() const = 0;
     virtual void ataque() const = 0;
 
+
 };
 
 
