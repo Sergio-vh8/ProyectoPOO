@@ -3,4 +3,6 @@ project(ProyectoPOO)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(ProyectoPOO main.cpp)
+add_executable(ProyectoPOO main.cpp
+        hola.cpp
+        hola.h)
