@@ -4,6 +4,4 @@ project(ProyectoPOO)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(ProyectoPOO main.cpp
-        hola.cpp
-        Entidad.cpp
-        Entidad.h)
+        hola.cpp)
