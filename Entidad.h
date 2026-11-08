@@ -4,12 +4,13 @@
 
 class Entidad {
 protected:
+    std::string nombre;
     int vida;
     int danio;
     int resistencia;
 
 public:
-    Entidad(int vida, int danio, int resistencia);
+    Entidad(int vida, int danio, int resistencia, std::string nombre);
     ~virtual Entidad() const = 0;
     virtual void ataque() const = 0;
 
