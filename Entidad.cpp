@@ -4,9 +4,9 @@ Entidad::Entidad(string nombre, int vida, int ataque, int defensa)
     : nombre(nombre), vida(vida), ataque(ataque), defensa(defensa) {}
 
 void Entidad::recibirDanio(int danio) {
-    int real = danio - defensa;
-    if (real < 1) real = 1;
-    vida -= real;
+    danio = danio - defensa;
+    if (danio < 1) danio = 1;
+    vida -= danio;
     if (vida < 0) vida = 0;
 }
 
