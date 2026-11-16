@@ -12,7 +12,8 @@ protected:
 
 public:
     Entidad(string nombre, int vida, int ataque, int defensa);
-    virtual ~Entidad();
+    virtual ~Entidad() = default;
+
     virtual void atacar(Entidad* objetivo) = 0;
 
     void recibirDanio(int danio);
@@ -23,4 +24,5 @@ public:
     int getAtaque() const;
     int getDefensa() const;
 };
+
 #endif //PROYECTOPOO_ENTIDAD_H
