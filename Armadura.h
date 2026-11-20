@@ -9,7 +9,7 @@ private:
     string calidad;   // Mala, Común, Buena, Legendaria
 
 public:
-    Armadura(string nombre, int valor, int bonusDefensa, string calidad);
+    Armadura(string nombre, int valor, string calidad);
     void usar(Jugador* jugador) override;
     int getBonusDefensa() const;
     string getCalidad() const;
