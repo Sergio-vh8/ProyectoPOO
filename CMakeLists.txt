@@ -14,4 +14,13 @@ add_executable(ProyectoPOO main.cpp
         Armadura.cpp
         Armadura.h
         Arma.cpp
-        Arma.h)
+        Arma.h
+        Orco.cpp
+        Orco.h
+        Mago.cpp
+        Mago.h
+        Esqueleto.cpp
+        Esqueleto.h
+        Enemigo.cpp
+        Enemigo.h
+)
