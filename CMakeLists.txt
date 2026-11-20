@@ -8,4 +8,8 @@ add_executable(ProyectoPOO main.cpp
         Jugador.cpp
         Jugador.h
         Objeto.cpp
-        Objeto.h)
+        Objeto.h
+        Pocion.cpp
+        Pocion.h
+        Armadura.cpp
+        Armadura.h)
