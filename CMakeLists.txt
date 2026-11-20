@@ -6,4 +6,6 @@ set(CMAKE_CXX_STANDARD 20)
 add_executable(ProyectoPOO main.cpp
         Entidad.cpp
         Jugador.cpp
-        Jugador.h)
+        Jugador.h
+        Objeto.cpp
+        Objeto.h)
