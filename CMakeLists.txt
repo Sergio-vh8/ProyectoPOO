@@ -12,4 +12,6 @@ add_executable(ProyectoPOO main.cpp
         Pocion.cpp
         Pocion.h
         Armadura.cpp
-        Armadura.h)
+        Armadura.h
+        Arma.cpp
+        Arma.h)
