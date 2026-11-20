@@ -1,13 +1,12 @@
-//
-// Created by Sergi on 20/11/2026.
-//
-
 #ifndef PROYECTOPOO_ORCO_H
 #define PROYECTOPOO_ORCO_H
+#include "Enemigo.h"
+using namespace std;
 
-
-class Orco {
+class Orco : public Enemigo {
+public:
+    Orco();
+    void atacar(Entidad* objetivo) override;
 };
-
 
 #endif //PROYECTOPOO_ORCO_H
