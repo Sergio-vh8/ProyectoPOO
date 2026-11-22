@@ -4,4 +4,6 @@ project(ProyectoPOO)
 set(CMAKE_CXX_STANDARD 17)
 
 file(GLOB SOURCES CONFIGURE_DEPENDS "*.cpp")
-add_executable(ProyectoPOO ${SOURCES})
+add_executable(ProyectoPOO ${SOURCES}
+        Juego.cpp
+        Juego.h)
