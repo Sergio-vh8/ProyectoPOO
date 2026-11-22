@@ -2,7 +2,8 @@
 #include "Jugador.h"
 #include <iostream>
 
-Herrero::Herrero(string nombre) : NPC(nombre) {}
+Herrero::Herrero(string nombre, int costoMejora, int bonusMejora)
+    : NPC(nombre), costoMejora(costoMejora), bonusMejora(bonusMejora) {}
 
 void Herrero::interactuar(Jugador* jugador) {
     if (jugador == nullptr) {
@@ -14,19 +15,17 @@ void Herrero::interactuar(Jugador* jugador) {
         return;
     }
 
-    int costo = 10;
-    int extra = 2;
-    cout << "Mejorar esa arma +" << extra << " por " << costo << " de micelio. 1 si quieres. 0 si no tienes dinero: ";
+    cout << "Mejorar arma +" << bonusMejora << " por " << costoMejora << " de micelio (1=Si, 0=No): ";
 
     int opcion;
     cin >> opcion;
 
     if (opcion == 1) {
-        if (jugador->gastarMicelio(costo)) {
-            jugador->mejorarArma(extra);
-            cout << "Tu arma ha sido mejorada.\n";
+        if (jugador->gastarMicelio(costoMejora)) {
+            jugador->mejorarArma(bonusMejora);
+            cout << "Arma mejorada.\n";
         } else {
-            cout << "Si no tienes micelio, no me molestes.\n";
+            cout << "Micelio insuficiente.\n";
         }
     }
 }

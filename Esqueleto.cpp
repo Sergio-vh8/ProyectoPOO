@@ -1,7 +1,7 @@
 #include "Esqueleto.h"
 #include <iostream>
 
-Esqueleto::Esqueleto() : Enemigo("Esqueleto", 30, 8, 1, 8, 15) {}
+Esqueleto::Esqueleto() : Enemigo("Esqueleto", 35, 8, 1, 10, 15) {}
 
 void Esqueleto::atacar(Entidad* objetivo) {
     cout << nombre << " te golpea dos veces con sus huesos.\n";
