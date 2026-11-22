@@ -1,3 +1,6 @@
+cmake
+
+
 cmake_minimum_required(VERSION 4.3)
 project(ProyectoPOO)
 
@@ -25,4 +28,16 @@ add_executable(ProyectoPOO main.cpp
         Enemigo.h
         HeroeLegendarioCorrupto.cpp
         HeroeLegendarioCorrupto.h
+        NPC.cpp
+        NPC.h
+        NpcLore.cpp
+        NpcLore.h
+        Vendedor.cpp
+        Vendedor.h
+        Herrero.cpp
+        Herrero.h
+        Cofre.cpp
+        Cofre.h
+        Habitacion.cpp
+        Habitacion.h
 )
