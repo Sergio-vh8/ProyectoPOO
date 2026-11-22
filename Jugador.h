@@ -27,7 +27,7 @@ public:
     Jugador& operator=(const Jugador&) = delete;
 
     void atacar(Entidad* objetivo) override;
-    bool moverse(string direccion);
+    bool moverse(string salida);
 
     void agregarObjeto(Objeto* obj);
     bool usarObjeto(int indice);

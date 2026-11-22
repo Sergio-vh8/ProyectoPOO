@@ -23,4 +23,6 @@ add_executable(ProyectoPOO main.cpp
         Esqueleto.h
         Enemigo.cpp
         Enemigo.h
+        HeroeLegendarioCorrupto.cpp
+        HeroeLegendarioCorrupto.h
 )
