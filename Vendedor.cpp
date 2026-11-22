@@ -1,5 +1,38 @@
-//
-// Created by elpan on 20/11/2026.
-//
-
 #include "Vendedor.h"
+#include "Jugador.h"
+#include "Pocion.h"
+#include "Armadura.h"
+#include <iostream>
+
+Vendedor::Vendedor(string nombre) : NPC(nombre) {}
+
+void Vendedor::interactuar(Jugador* jugador) {
+    if (jugador == nullptr) {
+        return;
+    }
+
+    cout << nombre << " | Micelio: " << jugador->getMicelio() << "\n";
+    cout << "1. Pocion (10)\n";
+    cout << "2. Armadura (15)\n";
+    cout << "0. Salir\n";
+    cout << "Opcion: ";
+
+    int opcion;
+    cin >> opcion;
+
+    if (opcion == 1) {
+        if (jugador->gastarMicelio(10)) {
+            jugador->agregarObjeto(new Pocion("Pocion", 10, 25));
+            cout << "Objeto comprado.\n";
+        } else {
+            cout << "Micelio insuficiente.\n";
+        }
+    } else if (opcion == 2) {
+        if (jugador->gastarMicelio(15)) {
+            jugador->agregarObjeto(new Armadura("Armadura", 15, "Común"));
+            cout << "Objeto comprado.\n";
+        } else {
+            cout << "Micelio insuficiente.\n";
+        }
+    }
+}

@@ -1,5 +1,7 @@
-//
-// Created by elpan on 20/11/2026.
-//
-
 #include "NPC.h"
+
+NPC::NPC(string nombre) : nombre(nombre) {}
+
+string NPC::getNombre() const {
+    return nombre;
+}

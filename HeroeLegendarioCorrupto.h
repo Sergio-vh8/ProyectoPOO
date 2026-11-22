@@ -1,8 +1,5 @@
-//
-// Created by elpan on 20/11/2026.
-//
-#ifndef PROYECTOPOO_HEROELEGENDARIO_H
-#define PROYECTOPOO_HEROELEGENDARIO_H
+#ifndef PROYECTOPOO_HEROELEGENDARIOCORRUPTO_H
+#define PROYECTOPOO_HEROELEGENDARIOCORRUPTO_H
 #include "Enemigo.h"
 #include <string>
 using namespace std;
@@ -20,4 +17,4 @@ public:
     bool esJefe() const override;
 };
 
-#endif //PROYECTOPOO_HEROELEGENDARIO_H
+#endif //PROYECTOPOO_HEROELEGENDARIOCORRUPTO_H
